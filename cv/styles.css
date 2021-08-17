@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    color: #2c2c2c;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+article, aside, figcaption, figure, footer, header, main, nav, section, header img {
+    display: block;
+}
+
+.text-white, header a {
+    color: #ffffff;
+}
+.text-uppercase, header > section > nav, h5 {
+    text-transform: uppercase;
+}
+.o-auto {
+    overflow: auto;
+}
+.f-right {
+    float: right;
+}
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+h2 {
+    font-size: 1.714em;
+    line-height: 1.45em;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 1.5rem;
+}
+.text-centre, h2 {
+    text-align: center;
+}
+
+.f-left, header > section > nav > main > section > ul > li, #about > div > section, h5, #skills > div > section {
+    float: left;
+}
+
+.container, header > section > nav > main, #about > div > section {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(14, 46, 122, 0.5)), url("images/header.jpg");
+    padding-bottom: 3rem;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+h5 {
+    width: 33.333333%;
+    max-width: 33.333333%;
+}
+
+header > section > nav {
+    padding: 20px 1rem 0.625rem;
+    margin-bottom: 20px;
+    transition: all 300ms ease 0s;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    min-height: 53px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+header > section > nav > main {
+    max-width: 1140px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+header > section > nav > main > section > ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: inline-block;
+}
+ul {
+    list-style: none;
+}
+header > section > nav > main > section > ul > li:not(:last-child) {
+    margin-right: 5px;
+}
+header > section > nav > main > section > ul > li > a {
+    font-size: 0.7142em;
+    padding: 0.5rem 0.7rem;
+    line-height: 1.625rem;
+}
+header > section > nav > main > section > ul > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.1875rem;
+ }
+header img {
+    margin: auto;
+    margin-bottom: 2.5rem;
+    border-radius: 50%;
+    height: 180px;
+    width: 240px;
+}
+header img:hover {
+    -webkit-transform: scale(1.06, 1.06);
+    transform: scale(1.06, 1.06);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+h1 {
+    margin-bottom: .5rem;
+}
+
+#about, #skills, #experience, #education, #contact {
+    padding: 70px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+#about > div, #skills > div, #experience > div, #education > div, #contact > article {
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0.1875rem;
+    margin-bottom: 20px;
+}
+#about > div > section, #contact > article > aside, #contact > article > main {
+    max-width: 47%;
+}
+#skills > div > section {
+    width: 46%;
+}
+#about > div > section > article, #skills > div > section, #experience > div > main, #experience > div > aside, #education > div > main, #contact > article, #contact > article > aside, #contact > article > main, footer {
+    padding: 1.25rem;
+}
+#about > div > section > article > section > p {
+    max-width: 66.666667%;
+}
+#experience > div > aside, #education > div > aside {
+    background-color: rgb(14, 46, 122);
+    padding-top: 4.75%;
+    padding-bottom: 4.75%;
+}
+#experience > div > aside {
+    width: 21.8%;
+}
+#education > div > aside {
+    width: 11.75%;
+}
+#experience > div > main {
+    max-width: 71%;
+}
+#experience > div, #education > div {
+    padding-left: 0 !important;
+}
+input, textarea {
+    color: #000000;
+    border-radius: 30px;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    resize: none;
+    line-height: 2;
+    /* -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out; */
+    /* transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out; */
+    max-width: 100%;
+    width: 75%;
+    padding: 10px 0 10px 18px;
+    border: 1px solid #E3E3E3;
+}
+input:focus, textarea:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(14, 46, 122);
+    border-radius: 0;
+}
+input[type=submit] {
+    background-color: rgb(14, 46, 122);
+    color: #ffffff;
+    width: 80%;
+    font-weight: bold;
+}
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: rgb(14, 46, 122);
+    border: 1px solid rgb(14, 46, 122);
+    font-weight: 1000;
+}
+#contact h5, #contact p {
+    font-size: 14px;
+}
+#contact h5 {
+    max-width: 100%;
+    width: 100%;
+}
+#contact p {
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+#about a, #contact a {
+    color: initial;
+    text-decoration: underline;
+}
+#about a:hover, #contact a:hover {
+    color: rgb(14, 46, 122);
+    text-decoration: none;
+}
+#skills li {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#education aside {
+    padding-left: 6.8%;
+    padding-right: 6.8%;
+}
+
+@media screen and (max-width:1280px) {
+    #contact > article > aside, #contact > article > main {
+        max-width: 46.79%;
+    }
+}
+@media screen and (max-width:1024px) {
+    #about > div > section {
+        max-width: 46.6%;
+    }
+    #skills > div > section {
+        width: 45.47%;
+    }
+    #experience > div > aside {
+        width: 20.9%;
+    }
+    #experience > div > main {
+        max-width: 70%;
+    }
+    #experience > div > aside, #education > div > aside {
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+    #education > div > aside {
+        width: 11.8%;
+    }
+    #contact > article > aside, #contact > article > main {
+        max-width: 45.26%;
+    }
+}
+@media screen and (max-width:980px) {
+    header > section > nav > main > span {
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+    header > section > nav > main > span, header > section > nav > main > section > ul > li {
+        text-align: center;
+    }
+    header > section > nav > main > section {
+        float: none !important;
+    }
+    header > section > nav > main > section > ul, #about > div > section {
+        width: 100%;
+    }
+    header > section > nav > main > section > ul > li {
+        width: 23%;
+        margin-left: 5px;
+    }
+    #about > div {
+        overflow: hidden;
+    }
+    #about > div > section {
+        max-width: 100%;
+    }
+    #skills > div > section {
+        width: 45.2%;
+    }
+    #experience > div > aside {
+        width: 20.7%;
+    }
+    #experience > div > main {
+        max-width: 69%;
+    }
+    #experience > div > aside, #education > div > aside {
+        padding-bottom: 6.5%;
+        padding-top: 6.5%;
+    }
+    #education > div > aside {
+        width: 11.9%;
+    }
+    #contact > article > aside, #contact > article > main {
+        max-width: 45%;
+    }
+}
+@media screen and (max-width:900px) {
+    #skills > div > section {
+        width: 44.7%;
+    }
+    #experience > div > aside {
+        width: 20.2%;
+    }
+    #experience > div > aside, #education > div > aside {
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    #contact > article > aside, #contact > article > main {
+        max-width: 44.3%;
+    }
+}
+@media screen and (max-width:800px) {
+    #skills > div > section {
+        width: 43.9%;
+    }
+    #experience > div > aside {
+        width: 19.5%;
+    }
+    #experience > div > aside, #education > div > aside {
+        padding-bottom: 9.6%;
+        padding-top: 9.6%;
+    }
+    #experience > div > main {
+        max-width: 68%;
+    }
+    #education > div > aside {
+        width: 12%;
+    }
+    #contact > article > aside, #contact > article > main {
+        max-width: 43.5%;
+    }
+}
+@media screen and (max-width:768px) {
+    #skills > div > section {
+        width: 43.6%;
+    }
+    #experience > div > aside {
+        width: 19.1%;
+    }
+    #experience > div > aside, #education > div > aside {
+        padding-bottom: 10.1%;
+        padding-top: 10.1%;
+    }
+    #contact > article > aside, #contact > article > main {
+        max-width: 43.2%;
+    }
+}
+@media screen and (max-width:640px) {
+    #skills > div > section, #experience > div > aside {
+        width: 95%;
+    }
+    #experience > div > main, #contact > article > aside, #contact > article > main {
+        max-width: 100%;
+    }
+    #education > div > aside {
+        width: 89%;
+    }
+}
+@media screen and (max-width:600px) {
+    #skills > div, #experience > div {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:480px) {
+    #about > div > section {
+        padding: 0;
+    }
+    h5 {
+        width: 100%;
+        max-width: 100%;
+    }
+    #about > div > section > article > section {
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:360px) {
+    #about, #skills, #experience, #education, #contact {
+        padding: 35px;
+    }
+}
